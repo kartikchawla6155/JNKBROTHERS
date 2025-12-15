@@ -1,0 +1,22 @@
+create a Professional looking website for company name "JNK BROTHERS" with sections below.
+1. Home:
+        - Menu bar containing logo and company name on left side and navigations buttons for all sections on right side.
+        - Below menu bar, on the left side show tag line text and on the right side a good looking attractive image of Airtel Dish and internet.
+2. Our Services:
+3. ACTIVE INTERNET AND DTH PLANS:
+4. Our Happy Customers: 
+     - Marque for Hyatt hotel, Radisson hotel, hotel lords inn.
+5. Customer Testimonials: Tiles.                
+6. Contact us:
+     - Google Map for office location on left side.
+     - Contact us form on right side.
+7. Footer section with all rights reserved: 
+
+Use only HTML, CSS AND JS
+
+https://share.google/mT7oepFHfi923Demo
+
+
+for logo change in navbar:
+i have added images folder, now instead of showing JNK text  in menu bar use 512 size image. provided in images folder.
+
