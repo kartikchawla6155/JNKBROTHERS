@@ -141,49 +141,9 @@
 
                 <!-- DTH Plans -->
                 <div class="tab-content" id="dth-plans">
-                    <div class="plans-grid">
-                        <div class="plan-card">
-                            <div class="plan-header">
-                                <h3>Value Pack</h3>
-                                <div class="plan-price">₹199<span>/month</span></div>
-                            </div>
-                            <ul class="plan-features">
-                                <li>150+ Channels</li>
-                                <li>HD Channels</li>
-                                <li>Regional Channels</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                            <button class="plan-button">Choose Plan</button>
-                        </div>
-                        <div class="plan-card featured">
-                            <div class="plan-badge">Best Value</div>
-                            <div class="plan-header">
-                                <h3>Family Pack</h3>
-                                <div class="plan-price">₹299<span>/month</span></div>
-                            </div>
-                            <ul class="plan-features">
-                                <li>250+ Channels</li>
-                                <li>HD + Premium Channels</li>
-                                <li>All Regional Channels</li>
-                                <li>On-Demand Content</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                            <button class="plan-button">Choose Plan</button>
-                        </div>
-                        <div class="plan-card">
-                            <div class="plan-header">
-                                <h3>Ultra Pack</h3>
-                                <div class="plan-price">₹399<span>/month</span></div>
-                            </div>
-                            <ul class="plan-features">
-                                <li>350+ Channels</li>
-                                <li>All HD Channels</li>
-                                <li>Premium Sports & Movies</li>
-                                <li>On-Demand Content</li>
-                                <li>24/7 Priority Support</li>
-                            </ul>
-                            <button class="plan-button">Choose Plan</button>
-                        </div>
+                    <div class="plans-grid" id="dth-plans-grid">
+                        <!-- Plans will be loaded dynamically from Firebase -->
+                        <div class="loading-message">Loading DTH plans...</div>
                     </div>
                 </div>
             </div>
@@ -350,6 +310,28 @@
         </div>
     </footer>
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCQbYDYg59Y20co0UIPvhE8uNI6E-gAoAc",
+            authDomain: "jnk-website-13251.firebaseapp.com",
+            projectId: "jnk-website-13251",
+            storageBucket: "jnk-website-13251.firebasestorage.app",
+            messagingSenderId: "409029840126",
+            appId: "1:409029840126:web:bfe073cf8dd208858269af",
+            measurementId: "G-0KJL4R75LD"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        
+        // Make db available globally
+        window.firebaseDb = db;
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

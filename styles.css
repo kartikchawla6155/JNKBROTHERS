@@ -417,6 +417,21 @@ body {
     background: #c5000f;
 }
 
+.loading-message,
+.no-plans-message,
+.error-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: var(--gray);
+    font-size: 18px;
+}
+
+.error-message {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* Customers Section */
 .customers-section {
     padding: 80px 0;
